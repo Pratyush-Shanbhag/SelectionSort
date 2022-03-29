@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int* ReadWrite::readFile(string fileName, int arr[10]) {
+void ReadWrite::readFile(string fileName, int arr[10]) {
     ifstream infile(fileName);
     int count = 0;
     while(!infile.fail()) {
@@ -12,8 +12,6 @@ int* ReadWrite::readFile(string fileName, int arr[10]) {
     }
 
     infile.close();
-
-    return arr;
 }
 
 void ReadWrite::writeFile(int arr[10]) {

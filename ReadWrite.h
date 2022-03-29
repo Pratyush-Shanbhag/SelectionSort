@@ -6,7 +6,7 @@
 class ReadWrite {
 
     public:
-        int* readFile(std::string, int[10]);
+        void readFile(std::string, int[10]);
         void writeFile(int [10]);
 };
 
